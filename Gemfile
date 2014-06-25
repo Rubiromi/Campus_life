@@ -25,6 +25,8 @@ gem 'spring',        group: :development
 group :test do
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'timecop'
+  # gem to freeze the time
 end
 
 # There gems are needed when we develop a product, but won't be needed with done product. Therefore, they will be separated from other gems to run the product.
