@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :assignment do
+    text { Faker::BaconIpsum.paragraph }
+    complete { false }
   end
 end

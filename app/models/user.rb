@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :assignments
+
   validates :first_name, :last_name, presence: true
 
   def self.by_first_name(first_name)
